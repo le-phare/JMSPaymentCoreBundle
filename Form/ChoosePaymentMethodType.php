@@ -170,7 +170,7 @@ class ChoosePaymentMethodType extends AbstractType
             'allowed_methods' => 'array',
             'amount'          => array('numeric', 'closure'),
             'currency'        => 'string',
-            'predefined_data' => 'array',
+            'predefined_data' => array('array', 'closure'),
         ));
     }
 
